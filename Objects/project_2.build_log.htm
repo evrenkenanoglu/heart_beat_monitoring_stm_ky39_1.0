@@ -1,0 +1,288 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Evren kenanoglu, None, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Personal\FH\DSP\Project_2.0\project_2.0.uvprojx
+Project File Date:  12/30/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(91): warning: no previous extern declaration for non-static variable 'adc_value' [-Wmissing-variable-declarations]
+uint32_t adc_value[ADC_SAMPLE_NO] = {0};
+         ^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(91): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t adc_value[ADC_SAMPLE_NO] = {0};
+^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(92): warning: no previous extern declaration for non-static variable 'adcValue' [-Wmissing-variable-declarations]
+uint32_t adcValue                 = 0;
+         ^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(92): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t adcValue                 = 0;
+^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(93): warning: no previous extern declaration for non-static variable 'adcMeanValue' [-Wmissing-variable-declarations]
+uint32_t adcMeanValue             = 0;
+         ^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(93): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t adcMeanValue             = 0;
+^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(95): warning: no previous extern declaration for non-static variable 'bpmCounter' [-Wmissing-variable-declarations]
+uint8_t bpmCounter = 0;
+        ^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(95): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t bpmCounter = 0;
+^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(113): warning: no previous extern declaration for non-static variable 'ppgState' [-Wmissing-variable-declarations]
+ePPGState_t ppgState = eStatePPGIdle;
+            ^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(113): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ePPGState_t ppgState = eStatePPGIdle;
+^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(114): warning: no previous extern declaration for non-static variable 'state' [-Wmissing-variable-declarations]
+uint8_t     state    = eHeartBeatNotDetected;
+            ^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(114): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t     state    = eHeartBeatNotDetected;
+^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(116): warning: no previous extern declaration for non-static variable 'heartRateBPM' [-Wmissing-variable-declarations]
+int heartRateBPM = 0;
+    ^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(116): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int heartRateBPM = 0;
+^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(21): warning: In file included from...
+./RTE/Device/STM32F407VGTx/STCubeGenerated/Inc\main.h(31): warning: In file included from...
+C:/Users/kenanoglu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F407VGTx/STCubeGenerated/Inc\stm32f4xx_hal_conf.h(402): warning: In file included from...
+C:/Users/kenanoglu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_tim.h(321): warning: padding struct 'TIM_HandleTypeDef' with 3 bytes to align 'hdma' [-Wpadded]
+  DMA_HandleTypeDef           *hdma[7];      /*!< DMA Handlers array
+                               ^
+C:/Users/kenanoglu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_tim.h(315): warning: padding size of 'TIM_HandleTypeDef' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(21): warning: In file included from...
+./RTE/Device/STM32F407VGTx/STCubeGenerated/Inc\main.h(31): warning: In file included from...
+C:/Users/kenanoglu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F407VGTx/STCubeGenerated/Inc\stm32f4xx_hal_conf.h(286): warning: In file included from...
+C:/Users/kenanoglu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(149): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
+  void                       *Parent;                                                          /*!< Parent object state                    */ 
+                              ^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(21): warning: In file included from...
+./RTE/Device/STM32F407VGTx/STCubeGenerated/Inc\main.h(31): warning: In file included from...
+C:/Users/kenanoglu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F407VGTx/STCubeGenerated/Inc\stm32f4xx_hal_conf.h(294): warning: In file included from...
+C:/Users/kenanoglu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_adc.h(84): warning: padding struct 'ADC_InitTypeDef' with 3 bytes to align 'NbrOfConversion' [-Wpadded]
+  uint32_t NbrOfConversion;              /*!< Specifies the number of ranks that will be converted within the regular group sequencer.
+           ^
+C:/Users/kenanoglu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_adc.h(91): warning: padding struct 'ADC_InitTypeDef' with 3 bytes to align 'NbrOfDiscConversion' [-Wpadded]
+  uint32_t NbrOfDiscConversion;          /*!< Specifies the number of discontinuous conversions in which the  main sequence of regular group (parameter NbrOfConversion) will be subdivided.
+           ^
+C:/Users/kenanoglu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_adc.h(57): warning: padding size of 'ADC_InitTypeDef' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+C:/Users/kenanoglu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_adc.h(206): warning: padding struct 'ADC_HandleTypeDef' with 3 bytes to align 'State' [-Wpadded]
+  __IO uint32_t                 State;                       /*!< ADC communication state */
+                                ^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(21): warning: In file included from...
+./RTE/Device/STM32F407VGTx/STCubeGenerated/Inc\main.h(31): warning: In file included from...
+C:/Users/kenanoglu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F407VGTx/STCubeGenerated/Inc\stm32f4xx_hal_conf.h(358): warning: In file included from...
+C:/Users/kenanoglu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_i2c.h(216): warning: padding struct 'I2C_HandleTypeDef' with 1 byte to align 'ErrorCode' [-Wpadded]
+  __IO uint32_t              ErrorCode;      /*!< I2C Error code                           */
+                             ^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(444): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    adcRawValue *= (1000 / delay);
+                ~~  ~~~~~^~~~~~~
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(450): warning: implicit conversion turns floating-point number into integer: 'double' to 'int' [-Wfloat-conversion]
+        maxValue = adcRawValue * 0.8;
+                 ~ ~~~~~~~~~~~~^~~~~
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(458): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+            maxValue = adcRawValue;
+                     ~ ^~~~~~~~~~~
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(438): warning: no previous prototype for function 'heartbeatDetected' [-Wmissing-prototypes]
+uint8_t heartbeatDetected(uint32_t adcRawValue, int delay)
+        ^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(438): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint8_t heartbeatDetected(uint32_t adcRawValue, int delay)
+^
+static 
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(448): warning: comparison of integers of different signs: 'unsigned long' and 'int' [-Wsign-compare]
+    if (adcRawValue * 4L < maxValue)
+        ~~~~~~~~~~~~~~~~ ^ ~~~~~~~~
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(452): warning: comparison of integers of different signs: 'uint32_t' (aka 'unsigned int') and 'int' [-Wsign-compare]
+    if (adcRawValue > maxValue - (1000 / delay))
+        ~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(456): warning: comparison of integers of different signs: 'uint32_t' (aka 'unsigned int') and 'int' [-Wsign-compare]
+        if (adcRawValue > maxValue)
+            ~~~~~~~~~~~ ^ ~~~~~~~~
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(467): warning: comparison of integers of different signs: 'uint32_t' (aka 'unsigned int') and 'int' [-Wsign-compare]
+    else if (adcRawValue < maxValue - (3000 / delay))
+             ~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(526): warning: explicitly assigning value of variable of type 'int' to itself [-Wself-assign]
+        statePrev = statePrev;
+        ~~~~~~~~~ ^ ~~~~~~~~~
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(26): warning: In file included from...
+./library_files\oled_ssd1306.h(17): warning: In file included from...
+./library_files/ssd1306_fonts.h(17): warning: padding struct 'FontDef' with 2 bytes to align 'data' [-Wpadded]
+        const uint16_t *data; /*!< Pointer to data font data array */
+                        ^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(555): warning: unused variable 'toggleLeds' [-Wunused-variable]
+    static uint8_t  toggleLeds = 0;
+                    ^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(562): warning: unused variable 'beatMsec' [-Wunused-variable]
+    static int beatMsec = 0;
+               ^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(611): warning: implicit conversion loses integer precision: 'unsigned int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+    uint8_t length = strlen(str);
+            ~~~~~~   ^~~~~~~~~~~
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(645): warning: function 'Error_Handler' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(47): warning: no previous extern declaration for non-static variable 'hadc1' [-Wmissing-variable-declarations]
+ADC_HandleTypeDef hadc1;
+                  ^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(47): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ADC_HandleTypeDef hadc1;
+^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(48): warning: no previous extern declaration for non-static variable 'hdma_adc1' [-Wmissing-variable-declarations]
+DMA_HandleTypeDef hdma_adc1;
+                  ^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(48): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+DMA_HandleTypeDef hdma_adc1;
+^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(50): warning: no previous extern declaration for non-static variable 'hi2c1' [-Wmissing-variable-declarations]
+I2C_HandleTypeDef hi2c1;
+                  ^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(50): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+I2C_HandleTypeDef hi2c1;
+^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(52): warning: no previous extern declaration for non-static variable 'htim3' [-Wmissing-variable-declarations]
+TIM_HandleTypeDef htim3;
+                  ^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(52): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+TIM_HandleTypeDef htim3;
+^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(53): warning: no previous extern declaration for non-static variable 'htim4' [-Wmissing-variable-declarations]
+TIM_HandleTypeDef htim4;
+                  ^
+RTE/Device/STM32F407VGTx/STCubeGenerated/Src/main.c(53): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+TIM_HandleTypeDef htim4;
+^
+34 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=16170 RO-data=12270 RW-data=44 ZI-data=3208  
+".\Objects\project_2.0" - 0 Error(s), 34 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                project-path/Keil.FrameworkCubeMX.1.0.0.pack
+                Keil.FrameworkCubeMX.1.0.0
+                STM32CubeMX generated pack description
+   * Component: STM32CubeMX Version: 1.1.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: STM32Cube Framework Version: 1.0.0
+   * Component: ADC Version: 1.7.9
+   * Component: Common Version: 1.7.9
+   * Component: Cortex Version: 1.7.9
+   * Component: DMA Version: 1.7.9
+   * Component: GPIO Version: 1.7.9
+   * Component: I2C Version: 1.7.9
+   * Component: PWR Version: 1.7.9
+   * Component: RCC Version: 1.7.9
+   * Component: TIM Version: 1.7.9
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F407VGTx
+  .\RTE\Device\STM32F407VGTx\STCubeGenerated
+  .\RTE\Device\STM32F407VGTx\STCubeGenerated\Inc
+  .\RTE\_Target_1
+  C:\Users\kenanoglu\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\kenanoglu\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+  C:\Users\kenanoglu\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::Device:STM32Cube Framework:1.0.0 (API)
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+
+   * Component: Keil::Device:STM32Cube Framework:STM32CubeMX:1.1.0
+      Include file:  MX_Device.h
+      Source file:   STCubeGenerated\Src\stm32f4xx_hal_msp.c
+      Include file:  STCubeGenerated\Inc\stm32f4xx_hal_conf.h
+
+   * Component: Keil::Device:STM32Cube HAL:ADC:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:Common:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
+      Include file:  Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:DMA:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:I2C:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c
+
+   * Component: Keil::Device:STM32Cube HAL:PWR:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:TIM:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
